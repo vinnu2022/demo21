@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:ee="http://www.mulesoft.org/schema/mule/ee/core" xmlns:http="http://www.mulesoft.org/schema/mule/http"
+	xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd
+http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/ee/core/current/mule-ee.xsd">
+	<flow name="tyejyjFlow1" doc:id="851f4dd2-5a89-4b53-a498-6a6a859d4aa5" >
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="87b9af45-511a-41c9-84b9-5b17a2f98e80" />
+	</flow>
+	<flow name="tyejyjFlow2" doc:id="a8e7d975-8776-4b9d-aa0b-d3dd495f8362" >
+		<ee:transform doc:name="Transform Message" doc:id="ce34d864-6d62-49fe-b09f-e9ccfb6c65ee" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+{
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="tyejyjFlow14" doc:id="33dac69a-537b-4493-8044-fdaefb0802f9" >
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="22cfedcd-cce4-4567-8e7c-1888972471a7" />
+	</flow>
+	<flow name="tyejyjFlow13" doc:id="7b22f5f5-4bd7-41d2-aa6a-b0a4796b7a89" >
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="5460f2b5-8fc0-4a33-a52d-5379ce2919d4" />
+	</flow>
+	<flow name="tyejyjFlow12" doc:id="22bef467-2f8e-498a-b5be-8b75cf5b504e" >
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="4a8a0aee-2aea-4a15-8d8b-c75c319251f4" />
+	</flow>
+	<flow name="tyejyjFlow11" doc:id="e0474546-0644-4647-b20e-dce562b51adc" >
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="8569f49d-83bb-4fff-bdf1-1afa7538a172" />
+	</flow>
+	<flow name="tyejyjFlow10" doc:id="23729efa-da4c-44a2-bf76-d6083b088716" >
+		<ee:transform doc:name="Transform Message" doc:id="42877e75-3ee1-48d3-b73d-ac12dd6217d4" >
+			<ee:message >
+				<ee:set-payload ><![CDATA[%dw 2.0
+output application/java
+---
+{
+}]]></ee:set-payload>
+			</ee:message>
+		</ee:transform>
+	</flow>
+	<flow name="tyejyjFlow9" doc:id="b017ae40-87da-4e4c-b4de-36fffab9a300" >
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="050a942f-409d-406c-a5e8-f4e8480831a6" />
+	</flow>
+	<flow name="tyejyjFlow8" doc:id="e5cdc851-53e3-4a8d-a515-8cb7b2e34724" >
+		<http:listener doc:name="Listener" doc:id="be4b0236-8e83-4512-9e8c-f8e30d26a02a" />
+	</flow>
+	<flow name="tyejyjFlow7" doc:id="39de1e05-4310-42a4-ad5a-b5bf6ceacfaf" >
+		<choice doc:name="Choice" doc:id="59dd72e4-7f1e-4db9-aed4-61ade94cd720" >
+			<when />
+		</choice>
+	</flow>
+	<flow name="tyejyjFlow6" doc:id="bb1b4bbe-36ea-434b-af93-442190fb6a59" >
+		<http:request method="GET" doc:name="Request" doc:id="89060cbe-9a90-4953-8ef5-19dedf963d73" />
+	</flow>
+	<flow name="tyejyjFlow5" doc:id="eb8439d6-1442-4aff-b0bd-cad7461f0523" >
+		<http:request method="GET" doc:name="Request" doc:id="da45b56d-32b7-4e7e-a06e-b7ad11d30436" />
+	</flow>
+	<flow name="tyejyjFlow4" doc:id="6a99a009-8564-41f8-b032-f2f3bf97d76b" >
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="b22f6103-c755-42a2-91b3-fc3a888c49b5" />
+	</flow>
+	<flow name="tyejyjFlow3" doc:id="34dbfff4-7a2f-4829-b4c3-9b2a676c5cad" >
+		<set-payload value="#[payload]" doc:name="Set Payload" doc:id="dd4e21ef-597b-4717-ac25-cda17a76655a" />
+	</flow>
+	<flow name="tyejyjFlow" doc:id="f3942727-5a52-4551-96bc-354c745019f4" >
+		<http:listener doc:name="Listener" doc:id="73cd596a-510a-4e37-9450-6815fe6e9de4" />
+	</flow>
+</mule>
